@@ -1,0 +1,29 @@
+{
+  "name": "youtube-clone",
+  "version": "1.0.0",
+  "description": "Practinig node JS and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackTanDoo/youtube-clone.git"
+  },
+  "author": "HackTanDoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackTanDoo/youtube-clone/issues"
+  },
+  "homepage": "https://github.com/HackTanDoo/youtube-clone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "nodemon": "^2.0.7"
+  }
+}
