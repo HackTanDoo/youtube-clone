@@ -5,14 +5,16 @@ import logger from "morgan";
 const PORT = 4000;
 const app = express();
 
-const handleHome = (req, res) => {
-    return res.send("<div>HELLO!</div>");
-}
-
 const devLogger = logger("dev");
 
+
+app.set("view engine", "pug");
+app.set("views", process.cwd()+"/src/views/");
 app.use(devLogger);
-app.get("/", handleHome);
+app.use("/". globalRouter);
+app.use("/users". userRouter);
+app.use("/videos". videoRouter);
+
 
 
 const handleListening = () => console.log(`Server Listening on port ${PORT}`);
